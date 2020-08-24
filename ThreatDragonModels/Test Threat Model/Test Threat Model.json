@@ -10,7 +10,14 @@
         "name": "@gregose"
       }
     ],
-    "diagrams": [],
+    "diagrams": [
+      {
+        "title": "Dataflow Diagram",
+        "thumbnail": "./public/content/images/thumbnail.stride.jpg",
+        "diagramType": "STRIDE",
+        "id": 0
+      }
+    ],
     "reviewer": "@rreichel3"
   }
 }
