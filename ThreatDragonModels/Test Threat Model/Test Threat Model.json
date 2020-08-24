@@ -15,7 +15,158 @@
         "title": "Dataflow Diagram",
         "thumbnail": "./public/content/images/thumbnail.stride.jpg",
         "diagramType": "STRIDE",
-        "id": 0
+        "id": 0,
+        "diagramJson": {
+          "cells": [
+            {
+              "type": "tm.Process",
+              "size": {
+                "width": 100,
+                "height": 100
+              },
+              "position": {
+                "x": 514,
+                "y": 208
+              },
+              "angle": 0,
+              "id": "87ea0726-d2c5-4f96-910e-194cbd54363e",
+              "z": 1,
+              "hasOpenThreats": true,
+              "description": "This is our test monolith",
+              "threats": [
+                {
+                  "ruleId": "c1377855-ea20-4c97-8861-f95c364fb8d2",
+                  "title": "CSRF Bypass",
+                  "type": "Elevation of privilege",
+                  "modelType": "STRIDE",
+                  "status": "Open",
+                  "severity": "High",
+                  "description": "A generic elevation threat"
+                }
+              ],
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "Test App"
+                },
+                ".element-text": {
+                  "class": "element-text hasOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Store",
+              "size": {
+                "width": 160,
+                "height": 80
+              },
+              "position": {
+                "x": 792,
+                "y": 86
+              },
+              "angle": 0,
+              "id": "17852f23-ee5a-43ff-85da-950b80ea1d28",
+              "z": 2,
+              "hasOpenThreats": false,
+              "description": "The database cluster where user information is stored",
+              "outOfScope": false,
+              "reasonOutOfScope": "Access to database is limited",
+              "storesCredentials": true,
+              "isEncrypted": true,
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "MySQL Cluster"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Actor",
+              "size": {
+                "width": 160,
+                "height": 80
+              },
+              "position": {
+                "x": 62,
+                "y": 220
+              },
+              "angle": 0,
+              "id": "2bd14d72-179e-49c2-85c3-e9f0b8764b49",
+              "z": 3,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "User"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "size": {
+                "width": 10,
+                "height": 10
+              },
+              "smooth": true,
+              "source": {
+                "id": "2bd14d72-179e-49c2-85c3-e9f0b8764b49"
+              },
+              "target": {
+                "id": "87ea0726-d2c5-4f96-910e-194cbd54363e"
+              },
+              "vertices": [
+                {
+                  "x": 328,
+                  "y": 112
+                },
+                {
+                  "x": 459,
+                  "y": 154
+                }
+              ],
+              "id": "91a1999e-018a-4a95-bc3a-b6a787b6e407",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "authenticated\nrequest",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 4,
+              "hasOpenThreats": false,
+              "isEncrypted": true,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            }
+          ]
+        },
+        "size": {
+          "height": 590,
+          "width": 952
+        }
       }
     ],
     "reviewer": "@rreichel3"
