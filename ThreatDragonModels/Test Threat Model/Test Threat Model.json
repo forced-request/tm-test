@@ -1,0 +1,16 @@
+{
+  "summary": {
+    "title": "Test Threat Model",
+    "owner": "@forced-request",
+    "description": "This is just a test system with some test stuff"
+  },
+  "detail": {
+    "contributors": [
+      {
+        "name": "@gregose"
+      }
+    ],
+    "diagrams": [],
+    "reviewer": "@rreichel3"
+  }
+}
